@@ -249,6 +249,7 @@ section.visible {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    text-align: center;
 }
 
 .skill-item::before {
@@ -270,6 +271,11 @@ section.visible {
 .skill-item:hover {
     transform: translateY(-5px);
     border-color: #00ff88;
+}
+
+.skill-icon {
+    font-size: 3rem; /* aumenta para 4 vezes o tamanho padrão */
+    margin-bottom: 1rem; /* opcional: espaçamento abaixo do ícone */
 }
 
 /* Projetos Section */
@@ -374,6 +380,52 @@ section.visible {
     max-width: 600px;
     margin: 0 auto;
 }
+
+
+/**/
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.contact-form,
+.contact-info {
+    flex: 1 1 45%;
+    min-width: 300px;
+}
+
+/* Estilo para o bloco de informações */
+.contact-info {
+    
+    color: #ffffff;
+}
+
+.contact-info h3 {
+    color: #00ff88;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.contact-info a {
+    color: #00ff88;
+    text-decoration: none;
+    border-bottom: 1px dashed #00ff88;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/**/
 
 .form-group {
     margin-bottom: 2rem;
@@ -527,10 +579,19 @@ footer {
 }
 
 .about-photo img {
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
+    width: 550px;
+    height: 400px;
     object-fit: cover;
     border: 3px solid #00ff88;
     box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+}
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
 }

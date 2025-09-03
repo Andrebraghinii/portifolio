@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <title>André Nascimento</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -37,13 +37,16 @@
     <section id="about" class="about">
 
         <div class="about-photo">
-            <img src="" alt="" class="profile-pic">
+            <img src="img/certo.jpg" alt="" class="profile-pic">
         </div>
 
         <div class="about-text">
             <h2>Sobre Mim</h2>
-            <p>Sou desenvolvedor full stack com mais de 3 anos de experiência na criação de aplicações web completas, escaláveis e eficientes. Trabalho com tecnologias como HTML, CSS, JavaScript, Java e PHP, sempre buscando unir performance, organização de código e uma boa experiência para o usuário final.</p>
-            <p>Minha missão é transformar ideias complexas em sistemas eficientes que impulsionam o crescimento dos negócios por meio da tecnologia.</p>
+            <p>Sou desenvolvedor full stack com mais de 3 anos de experiência na criação de aplicações web completas,
+                escaláveis e eficientes. Trabalho com tecnologias como HTML, CSS, JavaScript, Java e PHP, sempre
+                buscando unir performance, organização de código e uma boa experiência para o usuário final.</p>
+            <p>Minha missão é transformar ideias complexas em sistemas eficientes que impulsionam o crescimento dos
+                negócios por meio da tecnologia.</p>
         </div>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
@@ -114,28 +117,57 @@
     </section>
 
     <section id="contact" class="contact">
-        <h2>Contato</h2>
-        <form action="https://formsubmit.co/andrefelipebn1@gmail.com" method="POST" class="contact-form">
-            <div class="form-group">
-                <input type="text" name="name" id="name" placeholder=" " required>
-                <label for="name">Nome</label>
+        <h2>Entre em Contato</h2>
+
+        <div class="contact-container">
+            <!-- Formulário -->
+            <form action="https://formsubmit.co/andrefelipebn1@gmail.com" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder=" " required>
+                    <label for="name">Nome</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" placeholder=" " required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="message" rows="5" placeholder=" " required></textarea>
+                    <label for="message">Mensagem</label>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Mensagem</button>
+            </form>
+
+            <!-- Informações adicionais -->
+            <div class="contact-info">
+                <h3>
+                    <i class="fas fa-handshake" style="margin-right: 8px; color: #00ff88;"></i>
+                    Vamos Trabalhar Juntos!
+                </h3>
+
+                <p>
+                    <i class="fas fa-envelope" style="margin-right: 8px; color: #00ff88;"></i>
+                    <strong>Email:</strong> andrefelipebn1@gmail.com
+                </p>
+
+                <p>
+                    <i class="fas fa-phone" style="margin-right: 8px; color: #00ff88;"></i>
+                    <strong>Contato:</strong> 49 99135-9018
+                </p>
+
+                <p>
+                    <i class="fas fa-map-marker-alt" style="margin-right: 8px; color: #00ff88;"></i>
+                    <strong>Localização:</strong> Rio das Antas, SC - Brasil
+                </p>
             </div>
-            <div class="form-group">
-                <input type="email" name="email" id="email" placeholder=" " required>
-                <label for="email">Email</label>
-            </div>
-            <div class="form-group">
-                <textarea name="message" id="message" rows="5" placeholder=" " required></textarea>
-                <label for="message">Mensagem</label>
-            </div>
-            <button type="submit" class="submit-btn">Enviar Mensagem</button>
-        </form>
+        </div>
     </section>
+
 
     <footer>
         <div class="social-links">
             <a href="https://github.com/Andrebraghinii" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/andr%C3%A9-nascimento-6253a9382/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/andr%C3%A9-nascimento-6253a9382/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
             <a href="https://www.instagram.com/andre.nascimentoo_/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
         <p>&copy; 2025 André Nascimento. Todos os direitos reservados.</p>
